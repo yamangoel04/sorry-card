@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sorry card</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: #d66f6f;
+      display: flex;
+    }
+    .white{
+    font-size: 10vw;
+    display: flex;
+    }
+    #element{
+      font-size: 15vw;
+      color: aqua;
+    }
+    .accept-btn{
+      font-size: 5vw;
+      color: blueviolet;
+      border-radius: 30%;
+      background-color: #c5b74d;
+    }
+  </style>
+</head>
+<body>
+ <div>
+  <span class="white">
+    I am very very</span>
+  <span id="element"></span>
+  <div>
+  <button class="accept-btn" onclick="acceptApology()">Accept Apology</button></div>
+
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script>
+  var typed = new Typed('#element', {
+    strings: ['Sorry','🙇','😔'],
+    typeSpeed: 100,
+  });
+  
+  function acceptApology(){
+    alert('Thank you for accepting my apology!☺️☺️')
+  }
+  
+  </script>
+</body>
+</html>
